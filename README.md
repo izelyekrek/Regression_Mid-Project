@@ -32,6 +32,10 @@ In order to analyse and built my model, I imported the needed libraries such as 
 # 5 Explanation of how the data was processed (including the cleaning and selection of the variables to include in the model)
 After importing the libraries, I imported the dataset and checked a few information about it such as :
 
+    - the dataset shape : 
+        - 21597 rows
+        - 21 columns
+
     - the type of the columns : numerical or categorical. 
 
 <img src="Images/columnstype.png">
@@ -50,3 +54,12 @@ We can see that there is only 1 categorical column and the rest is numerical. Mo
 Before to build the linear regression model, I cleaned the dataset step by step :
 
 ## 5.1 Null values
+
+Checking null values is important. As we can see there is not null values in the dataframe.
+
+<img src="Images/null_values.png">
+
+## 5.2 Removing duplicates
+
+We can see taht there is no duplicates because we still have the same amount of rows. 
+
