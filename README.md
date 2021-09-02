@@ -7,6 +7,7 @@ Moreover, the first mission for this project is to check if some variables are e
 
 # 2 The organization of the project 
 For this project, we will see the use of different tools for answering questions and creating a linear regression model. The steps are :
+
     1) Answering to some questions on the SQL workbench
     2) Cleaning, analysing, creating the linear regression model and fitting it to the dataset
     3) Answering some question on the business intelligence tool which is Tableau
@@ -17,6 +18,7 @@ The queries for these questions can be find in the file named "SQL questions and
 
 # 4 Imported libraries
 In order to analyse and built my model, I imported the needed libraries such as :
+
     - pandas
     - numpy
     - matplotlib
@@ -29,17 +31,20 @@ In order to analyse and built my model, I imported the needed libraries such as 
 
 # 5 Explanation of how the data was processed (including the cleaning and selection of the variables to include in the model)
 After importing the libraries, I imported the dataset and checked a few information about it such as :
+
     - the type of the columns : numerical or categorical. 
 
 <img src="Images/columnstype.png">
     
 We can see that there is only 1 categorical column and the rest is numerical. Moreover, a few columns can be convert to categorical because there are only a few unique values in each column. These columns, with respectively the different variables, are : 
+
         - 'bedrooms' : from 1 to 10 and 33
         - 'bathrooms' : from 0.5 until 5.25 by step of 0.25
         - 'floors' : from 1 to 3.5 by step of 0.5
         - 'waterfront' : 0 (no waterfront) and 1 (with waterfront)
         - 'view' : from 0 to 5
         - 'grade' : from 3 to 12
+        
     - checking the difference between the 75% and the max to see in which columns there is a huge gap and which one to clean the outliers. We can see here that there is a big difference in the columns : 'sqft_living','sqft_lot', 'sqft_living15','sqft_lot15','sqft_basement' and 'sqft_above'
     
 Before to build the linear regression model, I cleaned the dataset step by step :
