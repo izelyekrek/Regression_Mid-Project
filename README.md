@@ -31,7 +31,7 @@ In order to analyse and built my model, I imported the needed libraries such as 
 After importing the libraries, I imported the dataset and checked a few information about it such as :
     - the type of the columns : numerical or categorical. 
 
-<img src="images/columnstype.png">
+<img src="Images/columnstype.png">
     
 We can see that there is only 1 categorical column and the rest is numerical. Moreover, a few columns can be convert to categorical because there are only a few unique values in each column. These columns, with respectively the different variables, are : 
         - 'bedrooms' : from 1 to 10 and 33
