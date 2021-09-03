@@ -49,7 +49,7 @@ We can see that there is only 1 categorical column and the rest is numerical. Mo
         - 'view' : from 0 to 5
         - 'grade' : from 3 to 12
         
-    - checking the difference between the 75% and the max to see in which columns there is a huge gap and which one to clean the outliers. We can see here that there is a big difference in the columns : 'sqft_living','sqft_lot', 'sqft_living15','sqft_lot15','sqft_basement' and 'sqft_above'
+    - checking the difference between the 75% and the max row to see in which columns there is a huge gap and which one to clean the outliers. We can see here that there is a big difference in the columns : 'sqft_living','sqft_lot', 'sqft_living15','sqft_lot15','sqft_basement' and 'sqft_above'
     
 Before to build the linear regression model, I cleaned the dataset step by step :
 
@@ -62,4 +62,9 @@ Checking null values is important. As we can see there is not null values in the
 ## 5.2 Removing duplicates
 
 We can see taht there is no duplicates because we still have the same amount of rows. 
+
+## 5.3 Checking and cleaning the outliers 
+As we saw the big gap between the 75% and the max row in a few columns, I decided to write a function that will clean them all together. 
+As I decided at the beginning to just keep the sqft_libing15 and sqft_lot15 of 2015 because for me the most logic was to keep the most recent measures of the houses. 
+
 
