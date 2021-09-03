@@ -64,7 +64,15 @@ Checking null values is important. As we can see there is not null values in the
 We can see taht there is no duplicates because we still have the same amount of rows. 
 
 ## 5.3 Checking and cleaning the outliers 
-As we saw the big gap between the 75% and the max row in a few columns, I decided to write a function that will clean them all together. 
+As we saw the big gap between the 75% and the max row in a few columns.
+When I clean them once with a def function, I loose a lot of data so I decided to do it column by column. 
 As I decided at the beginning to just keep the sqft_libing15 and sqft_lot15 of 2015 because for me the most logic was to keep the most recent measures of the houses. 
+I cleaned the outliers of the following columns : 'sqft_living15','sqft_basement' and 'sqft_above'.
+I meant to not clean the sqft_lot15 column, even there is a huge gap between the 75% and the max, because when I do the correlation later we realise that the sqft_lot15 column has really low correlation (that means that I will drop it) so I decided that it will be useless to clean before the outliers of this column and also because it will make loose a lot of rows for nothing. 
+
+## 5.4 Checking for correlation
+After cleaning my dataset, I check for the correlation to drop some columns if necessary to built correctly my model. 
+
+<img src="Images/hmap.png">
 
 
