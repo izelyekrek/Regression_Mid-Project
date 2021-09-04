@@ -63,7 +63,7 @@ Checking null values is important. As we can see there is not null values in the
 
 ## 5.2 Removing duplicates
 
-We can see taht there is no duplicates because we still have the same amount of rows. 
+We can see that there is no duplicates because we still have the same amount of rows. 
 
 ## 5.3 Checking and cleaning the outliers 
 As we saw the big gap between the 75% and the max row in a few columns.
@@ -74,7 +74,7 @@ I meant to not clean the sqft_lot15 column, even there is a huge gap between the
 
 ## 5.4 Checking for correlation
 After cleaning my dataset, I check for the correlation to drop some columns if necessary to built correctly my model. 
-As said at the beginning, our target value is the 'price', so we look to the correlation score of the column's regarding to the price column. 
+As said at the beginning, our target value is the 'price', so we look at the correlation score of the column's regarding to the price column. 
 
 <img src="Images/hmap.png">
 
@@ -88,7 +88,7 @@ After that, I used the OneHot encoding method for encoding the categorical colum
     - OneHot encoding : Assign a unique integer to each label based on alphabetical order.
     
 # 6 Fitting the model
-After all of this steps, it's now time to fit the dataset to the linear regression model and to test different combination to improve our model. 
+After all of these steps, it's now time to fit the dataset to the linear regression model and to test different combination to improve our model. 
 For this analyse, we will just concentrate on the R2 (R-squared) score to approve or not that the combination is improving the model.
 
 To facility the comprehension of the different score, I decided to collect them in a table. 
