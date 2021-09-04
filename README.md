@@ -72,8 +72,41 @@ I meant to not clean the sqft_lot15 column, even there is a huge gap between the
 
 ## 5.4 Checking for correlation
 After cleaning my dataset, I check for the correlation to drop some columns if necessary to built correctly my model. 
+As said at the beginning, our target value is the 'price', so we look to the correlation score of the column's regarding to the price column. 
 
 <img src="Images/hmap.png">
+
+As we can see, in the following columns, the correlation with the target is low : 'condition','yr_built','yr_renovated','zipcode','long','sqft_lot15'. 
+So I dropped these columns from my dataset.
+
+## 5.5 Encoding the categorical columns :
+I converted some numerical columns to categorical because they have a few unique values.
+After that, I used the OneHot encoding method for encoding the categorical columns into numerical columns :
+
+    - OneHot encoding : Assign a unique integer to each label based on alphabetical order.
+    
+# 6 Fitting the model
+After all of this steps, it's now time to fit the dataset to the linear regression model and to test different combination to improve our model. 
+For this analyse, we will just concentrate on the R2 (R-squared) score to approve or not that the combination is improving the model.
+
+To facility the comprehension of the different score, I decided to collect them in a table. 
+More the R2 score is high, more this combination will make better predictions in the future. 
+
+Let's first check the for the R2 with only the dataset after cleaning it but without encoding the categorical columns :
+
+<img src="Images/R2_score.png">
+
+--> Our R2 score is 0.648. 
+
+Now we are going to try different combination to see if we can increase this R2 score :
+
+    - Normalizer :
+    - Standardizer :
+    - KNN regressor : 
+    
+The score for each combination are : 
+
+<img src="Images/Final_scores.png">
 
 
 
