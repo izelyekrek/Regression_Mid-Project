@@ -108,6 +108,10 @@ The score for each combination are :
 
 <img src="Images/Final_scores.png">
 
+# Conclusion
+In my opinion, the R2 score didn't improve that much because the correlation between the target value "price" and the other columns are not high a lot. 
+We just had 3 columns with a correlation score above 0.5. 
+Si, I will keep the combination KNN regressor and OneHot encoding as a model which has the highest score 0.664. 
 
 
 
