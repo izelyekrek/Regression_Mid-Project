@@ -49,7 +49,9 @@ We can see that there is only 1 categorical column and the rest is numerical. Mo
         - 'view' : from 0 to 5
         - 'grade' : from 3 to 12
         
-    - checking the difference between the 75% and the max row to see in which columns there is a huge gap and which one to clean the outliers. We can see here that there is a big difference in the columns : 'sqft_living','sqft_lot', 'sqft_living15','sqft_lot15','sqft_basement' and 'sqft_above'
+    - checking the difference between the 75% and the max row to see in which columns there is a huge gap and which one to clean the outliers. 
+    
+    We can see here that there is a big difference in the columns : 'sqft_living','sqft_lot', 'sqft_living15','sqft_lot15','sqft_basement' and 'sqft_above'
     
 Before to build the linear regression model, I cleaned the dataset step by step :
 
@@ -100,9 +102,9 @@ Let's first check the for the R2 with only the dataset after cleaning it but wit
 
 Now we are going to try different combination to see if we can increase this R2 score :
 
-    - Normalizer :
-    - Standardizer :
-    - KNN regressor : 
+    - Normalizer : to change the values of numeric columns in the dataset to a common scale, without distorting differences in the ranges of values.
+    - Standardizer : to convert data to a common format to enable users to process and analyze it.
+    - KNN regressor : approximates the association between independent variables and the continuous outcome by averaging the observations in the same neighbourhood.
     
 The score for each combination are : 
 
@@ -110,8 +112,10 @@ The score for each combination are :
 
 # Conclusion
 In my opinion, the R2 score didn't improve that much because the correlation between the target value "price" and the other columns are not high a lot. 
+
 We just had 3 columns with a correlation score above 0.5. 
-Si, I will keep the combination KNN regressor and OneHot encoding as a model which has the highest score 0.664. 
+
+So, I will keep the combination KNN regressor and OneHot encoding as a model which has the highest score 0.664. 
 
 
 

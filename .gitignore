@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# used websites
+https://towardsdatascience.com/label-encoder-and-onehot-encoder-in-python-83d32288b592
+https://towardsai.net/p/data-science/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
+https://www.sisense.com/glossary/data-standardization/
+https://bookdown.org/tpinto_home/Regression-and-Classification/k-nearest-neighbours-regression.html
